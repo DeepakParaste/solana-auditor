@@ -1,0 +1,20 @@
+[package]
+name = "test-target"
+version = "0.1.0"
+description = "Intentionally vulnerable Solana program — solana-auditor test target"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "test_target"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+idl-build = ["anchor-lang/idl-build"]
+default = []
+
+[dependencies]
+anchor-lang = "0.32.0"

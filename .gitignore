@@ -1,0 +1,26 @@
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Solana / Anchor
+.anchor/
+deploy/
+.DS_Store
+*.so
+test-ledger/
+id.json
+
+# Tool-specific
+.gemini/
+.agent/
+scripts/create-underfunded.js
+scripts/trigger-vulnerabilities.js
+package-lock.json
+package.json
